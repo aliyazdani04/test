@@ -43,7 +43,7 @@ def similar(a, b):
 
 def hasAds(msg):
     	  links = ["http://","https://",".ir",".com",".org",".net",".me"]
-      	for i in links:
+       	  for i in links:
 	            	if i in msg:
 	                   		return True  
  def hasInsult(msg):
