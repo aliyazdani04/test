@@ -44,16 +44,16 @@ def similar(a, b):
 def hasAds(msg):
     	  links = ["http://","https://",".ir",".com",".org",".net",".me"]
        	  for i in links:
-	            	if i in msg:
-	                   		return True  
+	       	  if i in msg:
+	                  return True  
  def hasInsult(msg):
       	swData = [False,None]
        	for i in open("dontReadMe.txt").read().split("\n"):
-	            	if i in msg:
-		                 	swData = [True, i]
-                      break
+	       	if i in msg:
+		        swData = [True, i]
+                        break
             		else: continue
-	     return swData
+        return swData
     
 # static variable
 answered, sleeped, retries = [], False, {}
